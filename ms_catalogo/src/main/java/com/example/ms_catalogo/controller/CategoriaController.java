@@ -20,6 +20,7 @@ public class CategoriaController {
     // Obtener todas las categorías
     @GetMapping
     public ResponseEntity<List<Categoria>> listarCategorias() {
+        System.out.println("Listando categorias");
         List<Categoria> categorias = categoriaService.listar();
         return new ResponseEntity<>(categorias, HttpStatus.OK);
     }
