@@ -5,10 +5,7 @@ import com.example.chatbot.dto.ChatDto;
 import com.example.chatbot.dto.ChatRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
@@ -17,6 +14,8 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/chat")
+//@CrossOrigin("*")
+
 public class ChatController {
 
     @Autowired
